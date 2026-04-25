@@ -9,7 +9,7 @@
 | **Formando** | António Magalhães Silva |
 | **Data** | Dezembro de 2025 |
 
-<img src="media/image1.png" style="width:6.49653in;height:2.91133in" />
+![](media/image1.png)
 # **Índice**
 
 [Capítulo 1](#section-1)
@@ -254,27 +254,27 @@ O presente relatório documenta a implementação de um ambiente de ciberseguran
 
 - **Gestão e Escalabilidade:** Organização dos agentes em grupos lógicos (Linux e Windows) para gestão centralizada de políticas.
 
-<img src="media/image2.png" style="width:6.26597in;height:6.15278in" />
+![](media/image2.png)
 
 Figura 1. Diagrama de rede
 
-<img src="media/image3.png" style="width:6.26806in;height:1.43125in" />
+![](media/image3.png)
 
 Figura 2. Linux Mint - Configuração de rede
 
-<img src="media/image4.png" style="width:6.26806in;height:1.92153in" />
+![](media/image4.png)
 
 Figura 3. Debian 13 - Configuração de rede
 
-<img src="media/image5.png" style="width:6.26806in;height:1.92153in" />
+![](media/image5.png)
 
 Figura 4. Rocky 10 - Configuração de rede
 
-<img src="media/image6.png" style="width:6.26806in;height:1.45764in" />
+![](media/image6.png)
 
 Figura 5. Windows 11 - Configuração de rede
 
-<img src="media/image7.png" style="width:6.26806in;height:2.14722in" />
+![](media/image7.png)
 
 Figura 6. Parrot OS - Configuração de rede
 
@@ -290,13 +290,13 @@ Usamos o seguinte comando:
 
 mentol@silvaa:~\$ curl -sO https://packages.wazuh.com/4.14/wazuh-install.sh && sudo bash ./wazuh-install.sh -a
 
-<img src="media/image8.png" style="width:6.26806in;height:3.38264in" />
+![](media/image8.png)
 
 Figura 7. Instalação do Wazuh-Manager no Linux Mint
 
 No fim da instalação, é-nos atribuído um user e uma password que devemos guardar.
 
-<img src="media/image9.png" style="width:6.26806in;height:3.38264in" />
+![](media/image9.png)
 
 Figura 8. Instalação do Wazuh-Manager no Linux Mint – User e Password
 
@@ -304,7 +304,7 @@ Caso seja necessário, podemos visualizar todas as passwords através do comando
 
 mentol@silvaa:~\$ sudo tar -O -xvf wazuh-install-files.tar wazuh-install-files/wazuh-passwords.txt
 
-<img src="media/image10.png" style="width:6.26806in;height:3.38264in" />
+![](media/image10.png)
 
 Figura 9. Instalação do Wazuh-Manager no Linux Mint – Visualização das Passwords
 
@@ -314,13 +314,13 @@ No meu caso usei a morada: https://172.23.10.2:443
 
 Introduzimos as credenciais que foram providenciadas após a instalação.
 
-<img src="media/image11.png" style="width:6.26806in;height:3.38264in" />
+![](media/image11.png)
 
 Figura 10. Linux Mint - Menú de Login do Wazuh-Manager
 
 Após o login, somos direccionados para o dashboard do Wazuh, como podemos verificar na figura seguinte.
 
-<img src="media/image12.png" style="width:6.26806in;height:3.38264in" />
+![](media/image12.png)
 
 Figura 11. Linux Mint – Dashboard do Wazuh-Manager
 
@@ -328,7 +328,7 @@ Uma ação recomendada pela equipa do Wazuh, é a de desabilitar os “*Wazuh pa
 
 mentol@silvaa:~\$ sudo sed -i "s/^deb /#deb /" /etc/apt/sources.list.d/wazuh.list
 
-<img src="media/image13.png" style="width:6.26806in;height:3.38264in" />
+![](media/image13.png)
 
 Figura 12. Linux Mint – Comando para desabilitar os “Wazuh package repositories” após a instalação.
 
@@ -342,7 +342,7 @@ De acordo com a equipa do Wazuh: “*O agente Wazuh é uma multi-plataforma e fu
 
 <https://documentation.wazuh.com/current/installation-guide/wazuh-agent/index.html>
 
-<img src="media/image14.png" style="width:6.26806in;height:3.38264in" />
+![](media/image14.png)
 
 Figura 13. Wazuh - Diagrama da arquitetura e dos módulos dos agentes.
 
@@ -350,7 +350,7 @@ Figura 13. Wazuh - Diagrama da arquitetura e dos módulos dos agentes.
 
 No dashboard do Wazuh-Manager selecionamos “*Deploy new agent*”.
 
-<img src="media/image15.png" style="width:6.26806in;height:3.38264in" />
+![](media/image15.png)
 
 Figura 14. Wazuh-Manager Dashboard: Instalação de novo agente (início)
 
@@ -359,7 +359,7 @@ Na janela seguinte, escolhemos o sistema operativo e introduzimos o endereço IP
 **manager_address**  
 *“Nome do host ou endereço IP do gestor onde o agente será registado. Se não for definido nenhum valor, o agente tentará registar-se no mesmo gestor que foi especificado para a conexão.”*
 
-<img src="media/image16.png" style="width:6.26806in;height:3.38264in" />
+![](media/image16.png)
 
 Figura 15. Wazuh-Manager Dashboard: Instalação de novo agente (atributos)
 
@@ -367,7 +367,7 @@ Atribuímos um nome único que identifique o Wazuh-Agent.
 
 Para proceder com a instalação no Debian13, devemos copiar o comando que aparece no campo 4, como podemos verificar na figura seguinte.
 
-<img src="media/image17.png" style="width:6.26806in;height:3.38264in" />
+![](media/image17.png)
 
 Figura 16. Wazuh-Manager Dashboard: Instalação de novo agente (atributos)
 
@@ -375,13 +375,13 @@ No Debian13, executamos o comando copiado do dashboard do Wazuh-Manager.
 
 debora@asilva:~\$ wget https://packages.wazuh.com/4.x/apt/pool/main/w/wazuh-agent/wazuh-agent_4.14.1-1_amd64.deb && sudo WAZUH_MANAGER='172.23.10.2' WAZUH_AGENT_NAME='agent-asilva' dpkg -i ./wazuh-agent_4.14.1-1_amd64.deb
 
-<img src="media/image18.png" style="width:6.26806in;height:3.38264in" />
+![](media/image18.png)
 
 Figura 16. Debian13: Instalação do Wazuh-agent
 
 Para que o Wazuh-Agent inicie automaticamente com o sistema, devemos executar os comandos ensinados na figura seguinte.
 
-<img src="media/image19.png" style="width:6.26806in;height:3.38264in" />
+![](media/image19.png)
 
 Figura 16. Wazuh-Manager Dashboard: Instalação do Wazuh-agent (finalização)
 
@@ -397,13 +397,13 @@ Para verificar que o serviço se encontra ativo, executamos o comando seguinte:
 
 debora@asilva:~\$ sudo systemctl status wazuh-agent
 
-<img src="media/image20.png" style="width:6.26806in;height:3.38264in" />
+![](media/image20.png)
 
 Figura 17. Debian13: Monitorização do estado do agente Wazuh
 
 No Wazuh-Manager, verificamos que o agent-asilva já se encontra ativo. De forma a efetuar essa verificação, acedemos ao menú *Endpoints* através da *Barra lateral Agents management Summary*.
 
-<img src="media/image21.png" style="width:6.26806in;height:3.38264in" />
+![](media/image21.png)
 
 Figura 18. Wazuh-Manager: Monitorização do estado do agente Wazuh
 
@@ -411,19 +411,19 @@ Figura 18. Wazuh-Manager: Monitorização do estado do agente Wazuh
 
 No menú Endpoints, selecionamos *Deploy new agent*.
 
-<img src="media/image22.png" style="width:6.26806in;height:3.38264in" />
+![](media/image22.png)
 
 Figura 19. Wazuh-Manager Dashboard: Instalação de novo agente (início)
 
 Selecionamos o repositório apropriado para o Rocky Linux e inserimos o endereço de IP do Wazuh-Manager (neste caso já se encontrava disponível, visto que tinha colocado o pisco para memorizá-lo quando criei o agente para o Debian13).
 
-<img src="media/image23.png" style="width:6.26806in;height:3.38264in" />
+![](media/image23.png)
 
 Figura 20. Wazuh-Manager Dashboard: Instalação de novo agente (atributos)
 
 Atribuímos um nome ao agente que iremos instalar no Rocky10 e copiamos o comando que permitirá efetuar o download e posterior instalação do Wazuh-Agent.
 
-<img src="media/image24.png" style="width:6.26806in;height:3.38264in" />
+![](media/image24.png)
 
 Figura 21. Wazuh-Manager Dashboard: Instalação de novo agente (atributos)
 
@@ -431,7 +431,7 @@ Executamos o comando no Rocky10.
 
 rocha@ams:~\$ curl -o wazuh-agent-4.14.1-1.x86_64.rpm https://packages.wazuh.com/4.x/yum/wazuh-agent-4.14.1-1.x86_64.rpm && sudo WAZUH_MANAGER='172.23.10.2' WAZUH_AGENT_NAME='agent-ams' rpm -ihv wazuh-agent-4.14.1-1.x86_64.rpm
 
-<img src="media/image25.png" style="width:6.26806in;height:3.38264in" />
+![](media/image25.png)
 
 Figura 22. Rocky10: Instalação do Wazuh-agent
 
@@ -443,7 +443,7 @@ rocha@ams:~\$ sudo systemctl enable wazuh-agent
 
 rocha@ams:~\$ sudo systemctl start wazuh-agent
 
-<img src="media/image26.png" style="width:6.26806in;height:3.38264in" />
+![](media/image26.png)
 
 Figura 22. Wazuh-Manager Dashboard: Instalação de novo agente (finalização)
 
@@ -451,7 +451,7 @@ Para verificar que o serviço se encontra ativo, executamos o comando seguinte:
 
 rocha@ams:~\$ sudo systemctl status wazuh-agent
 
-<img src="media/image27.png" style="width:6.26806in;height:3.38264in" />
+![](media/image27.png)
 
 Figura 23. Rocky10: Monitorização do estado do agente Wazuh
 
@@ -459,7 +459,7 @@ No Wazuh-Manager, verificamos que o agent-ams já se encontra ativo. De forma a 
 
 Falta-nos adicionar o Wazuh-Agent aos users do Windows11, algo que faremos de seguida.
 
-<img src="media/image28.png" style="width:6.26806in;height:3.38264in" />
+![](media/image28.png)
 
 Figura 24. Wazuh-Manager Dashboard: Monitorização do estado do agente Wazuh
 
@@ -467,19 +467,19 @@ Figura 24. Wazuh-Manager Dashboard: Monitorização do estado do agente Wazuh
 
 O processo para instalação do Wazuh-Agent no Windows11 é semelhante. Começamos por selecionar *Deploy new agent*.
 
-<img src="media/image29.png" style="width:6.26806in;height:3.38264in" />
+![](media/image29.png)
 
 Figura 25. Wazuh-Manager Dashboard: Instalação de novo agente (início)
 
 Selecionamos o sistema operativo Windows e mantemos o endereço de IP do Wazuh-Manager que tinhamos atribuído e memorizado anteriormente.
 
-<img src="media/image30.png" style="width:6.26806in;height:3.38264in" />
+![](media/image30.png)
 
 Figura 26. Wazuh-Manager Dashboard: Instalação de novo agente (atributos)
 
 Como fizemos para os agentes anteriores, atribuímos um nome e copiamos o comando que deverá ser executado no Wazuh-Agent.
 
-<img src="media/image31.png" style="width:6.26806in;height:3.38264in" />
+![](media/image31.png)
 
 Figura 27. Wazuh-Manager Dashboard: Instalação de novo agente (atributos)
 
@@ -491,13 +491,13 @@ Após a instalação, executamos o comando seguinte, de forma a iniciar o servi�
 
 PS C:\WINDOWS\system32\> NET START Wazuh
 
-<img src="media/image32.png" style="width:6.26806in;height:3.38264in" />
+![](media/image32.png)
 
 Figura 28. Windows11: Instalação do Wazuh-agent
 
 Nos *Endpoints* do Wazuh-Manager, verificamos que o agent-winzuh foi adicionado com sucesso.
 
-<img src="media/image33.png" style="width:6.26806in;height:3.38264in" />
+![](media/image33.png)
 
 Figura 29. Wazuh-Manager Dashboard: Monitorização do estado do agente Wazuh
 
@@ -507,7 +507,7 @@ Finalizada a fase inicial, a instalação e comunicação entre o Manager e os a
 
 ## File Integrity Monitoring (FIM)
 
-<img src="media/image34.jpeg" style="width:3.51142in;height:2.3399in" />
+![](media/image34.jpeg)
 
 Figura 30. Wazuh FIM
 
@@ -571,7 +571,7 @@ root@ams:/var/ossec/etc# cp -va ossec.conf ossec.conf.original
 
 root@ams:/var/ossec/etc# vim ossec.conf
 
-<img src="media/image35.png" style="width:6.26806in;height:3.36944in" />
+![](media/image35.png)
 
 Figura 31. Backup do ficheiro de configuração do Wazuh (ossec.conf) no Rocky10 e comando de acesso ao editor
 
@@ -581,7 +581,7 @@ Introduzimos a seguinte alteração no ficheiro:
 
 Após esta alteração, o Wazuh passa a reportar qualquer alteração efetuada no directório /home/rocha.
 
-<img src="media/image36.png" style="width:6.26806in;height:3.36944in" />
+![](media/image36.png)
 
 Figura 32. Edição do ficheiro de configuração do Wazuh-agent
 
@@ -589,7 +589,7 @@ Figura 32. Edição do ficheiro de configuração do Wazuh-agent
 
 root@ams:/var/ossec/etc# sudo dnf install audit audispd-plugins
 
-<img src="media/image37.png" style="width:6.26806in;height:3.36944in" />
+![](media/image37.png)
 
 Figura 33. Instalação do audit no Rocky10
 
@@ -607,19 +607,19 @@ Reiniciamos o Wazuh-Agent, para que as alterações entrem em efeito.
 
 root@ams:/var/ossec/etc# sudo systemctl restart wazuh-agent
 
-<img src="media/image38.png" style="width:6.26806in;height:3.36597in" />
+![](media/image38.png)
 
 Figura 34. Monitorização do estado do audit no Rocky10
 
 De forma a testar que alterações introduzidas surtiram efeito, criamos uma pasta e ficheiro no directório /home/rocha.
 
-<img src="media/image39.png" style="width:6.26806in;height:3.36944in" />
+![](media/image39.png)
 
 Figura 35. Rocky10: Validação da monitorização de integridade (FIM) via Auditd no Wazuh.
 
 Neste momento, o Wazuh-Manager já está a receber a informação enviada pelo Wazuh-Agent do Rocky10, como podemos verificar na figura seguinte.
 
-<img src="media/image40.png" style="width:6.26806in;height:3.36944in" />
+![](media/image40.png)
 
 Figura 36. Wazuh-Manager: Validação da monitorização de integridade (FIM) via Auditd no Wazuh.
 
@@ -627,11 +627,11 @@ Figura 36. Wazuh-Manager: Validação da monitorização de integridade (FIM) vi
 
 Nas figuras seguintes, apresento o exemplo de um log criado no Wazuh-Manager. Nele podemos encontrar informação detalhada do evento, importante para uma futura análise.
 
-<img src="media/image41.png" style="width:6.26806in;height:3.36944in" />
+![](media/image41.png)
 
-<img src="media/image42.png" style="width:6.26806in;height:3.36944in" />
+![](media/image42.png)
 
-<img src="media/image43.png" style="width:6.26806in;height:3.36944in" />
+![](media/image43.png)
 
 Figura 37. Wazuh-Manager: Registos (logs) de eventos de integridade de ficheiros (FIM).
 
@@ -649,7 +649,7 @@ root@asilva:/var/ossec/etc# cp -va ossec.conf ossec.conf.original
 
 root@asilva:/var/ossec/etc# vim ossec.conf
 
-<img src="media/image44.png" style="width:6.26806in;height:3.36944in" />
+![](media/image44.png)
 
 Figura 38. Debian13: Backup do ficheiro de configuração do Wazuh (ossec.conf) e comando de acesso ao editor
 
@@ -659,7 +659,7 @@ Introduzimos a seguinte alteração no ficheiro:
 
 Após esta alteração, o Wazuh passa a reportar qualquer alteração efetuada no directório /home/debora/Downloads.
 
-<img src="media/image45.png" style="width:6.26806in;height:3.36944in" />
+![](media/image45.png)
 
 Figura 39. Debian13: Edição do ficheiro de configuração do Wazuh (ossec.conf)
 
@@ -667,7 +667,7 @@ Após introduzirmos esta alteração no ficheiro ossec.conf, instalamos o [audit
 
 root@asilva:/var/ossec/etc# sudo apt install auditd audispd-plugins
 
-<img src="media/image46.png" style="width:6.26806in;height:3.36944in" />
+![](media/image46.png)
 
 Figura 40. Debian13: Instalação do auditd
 
@@ -685,21 +685,21 @@ Reiniciamos o Wazuh-Agent, para que as alterações entrem em efeito.
 
 root@asilva:/var/ossec/etc# sudo systemctl restart wazuh-agent
 
-<img src="media/image47.png" style="width:6.26806in;height:3.36944in" />
+![](media/image47.png)
 
-<img src="media/image48.png" style="width:6.26806in;height:0.37917in" />
+![](media/image48.png)
 
 Figura 41. Debian 13: Verificação do serviço Auditd e reinício do agente Wazuh.
 
 De forma a testar que as alterações introduzidas surtiram efeito, efetuamos o download do Google Chrome para o directório /home/debora/Downloads.
 
-<img src="media/image49.png" style="width:6.26806in;height:3.36944in" />
+![](media/image49.png)
 
 Figura 42. Debian13: Download de ficheiro de teste para a pasta /home/debora/Downloads
 
 Neste momento, o Wazuh-Manager já está a receber a informação enviada pelo Wazuh-Agent do Debian13, como podemos verificar na figura seguinte.
 
-<img src="media/image50.png" style="width:6.26806in;height:3.36944in" />
+![](media/image50.png)
 
 Figura 43. Wazuh-Manager: Visualização de alertas de monitorização de integridade
 
@@ -707,11 +707,11 @@ Como referi anteriormente, o Wazuh-Manager fornece logs detalhados que incluem o
 
 Nas figuras seguintes, apresento o exemplo de um log criado no Wazuh-Manager. Nele podemos encontrar informação detalhada do evento, importante para uma futura análise.
 
-<img src="media/image51.png" style="width:6.26806in;height:3.36944in" />
+![](media/image51.png)
 
 Figura 44. Wazuh-Manager: Registos (logs) de eventos de integridade de ficheiros (FIM)
 
-<img src="media/image52.png" style="width:6.26806in;height:3.36944in" />
+![](media/image52.png)
 
 Figura 45. Wazuh-Manager: Registos (logs) de eventos de integridade de ficheiros (FIM)
 
@@ -721,19 +721,19 @@ Finalizamos a configuração do FIM nos agentes. O ficheiro de configuração en
 
 C:\Program Files (x86)\ossec-agent
 
-<img src="media/image53.png" style="width:6.26806in;height:3.36944in" />
+![](media/image53.png)
 
 Figura 46. Windows 11: Visualização da pasta de configuração do agente Wazuh
 
 Como anteriormente, seguimos as boas práticas que recomendam que se faça uma cópia, que servirá de backup, do ficheiro de configuração, antes que qualquer alteração seja feita. Efetuamos uma cópia do ficheiro e procedemos com a configuração.
 
-<img src="media/image54.png" style="width:6.26806in;height:3.36944in" />
+![](media/image54.png)
 
 Figura 47. Windows 11: Cópia de seguarança do ficheiro de configuração do agente Wazuh (ossec.conf)
 
 Acedemos ao ficheiro ossec.conf através do Powershell. Devemos fazê-lo com privilégios de administrador.
 
-<img src="media/image55.png" style="width:6.26806in;height:3.36944in" />
+![](media/image55.png)
 
 Figura 48. Windows 11: Edição do ficheiro de configuração do agente Wazuh (ossec.conf)
 
@@ -741,7 +741,7 @@ Adicionamos a seguinte linha:
 
 \<directories\>C:\Users\\\Documents\</directories\>
 
-<img src="media/image56.png" style="width:6.26806in;height:3.36944in" />
+![](media/image56.png)
 
 Figura 49. Windows 11: Edição do ficheiro de configuração do agente Wazuh (ossec.conf)
 
@@ -766,23 +766,23 @@ Gravamos o ficheiro e fechamos.
 
 Acedemos ao Gestor de Serviços (services.msc) e reiniciamos o serviço para que as alterações efetuadas entrem em efeito. Através do Powershell seria Restart-Service -Name wazuh.
 
-<img src="media/image57.png" style="width:6.26806in;height:3.36944in" />
+![](media/image57.png)
 
 Figura 50. Windows 11: Reiniciar agente Wazuh
 
 Verificamos se as configurações entraram em efeito. Para tal, criei um ficheiro de texto na pasta C:\Documents dos dois users: bacalhau e silva.
 
-<img src="media/image58.png" style="width:6.26806in;height:3.36944in" />
+![](media/image58.png)
 
 Figura 51. Windows 11: Ficheiro de teste criado na pasta Documents do user silva
 
 No Wazuh-Manager, verificamos que o serviço se encontra ativo e a funcionar. O **whodata** permite que haja uma distinção entre os users, o que facilita a posterior análise dos logs.
 
-<img src="media/image59.png" style="width:6.26806in;height:3.36944in" />
+![](media/image59.png)
 
 Figura 52. Wazuh-Manager: Monitorização de eventos do utilizador 'bacalhau' (Windows 11)
 
-<img src="media/image60.png" style="width:6.26806in;height:3.36944in" />
+![](media/image60.png)
 
 Figura 53. Wazuh-Manager: Monitorização de eventos do utilizador ‘silva’ (Windows 11)
 
@@ -810,7 +810,7 @@ Visto que já efetuamos a configuração do Agente (monitorização), avançamos
 
 No servidor Wazuh, editamos o ficheiro /var/ossec/etc/ossec.conf para adicionar a chave da API do VirusTotal. Antes de proceder com as alterações, efetuamos uma cópia de segurança do ficheiro.
 
-<img src="media/image61.png" style="width:6.26806in;height:3.36944in" />
+![](media/image61.png)
 
 Figura 54. Linux Mint: Integração do VirusTotal no Wazuh-Manager
 
@@ -828,7 +828,7 @@ Adicionamos, de seguida, o bloco de texto que permitirá a integração do Virus
 
 340 \</integration\>
 
-<img src="media/image62.png" style="width:6.26806in;height:3.36944in" />
+![](media/image62.png)
 
 Figura 54. Integração do VirusTotal no Wazuh-Manager
 
@@ -848,7 +848,7 @@ Ainda no ficheiro ossec.conf do **Manager**, definimos o que deve acontecer q
 
 ##### Definir o Comando
 
-<img src="media/image63.png" style="width:6.26806in;height:3.36944in" />
+![](media/image63.png)
 
 Figura 55. Integração do VirusTotal no Wazuh-Manager: Configuração de Resposta Ativa no ossec.conf.
 
@@ -866,7 +866,7 @@ Bloco de configuração adicionado:
 
 ##### **Definir a Resposta Ativa**
 
-<img src="media/image64.png" style="width:6.26806in;height:3.36944in" />
+![](media/image64.png)
 
 Figura 56. Integração do VirusTotal no Wazuh-Manager: Configuração de Resposta Ativa no ossec.conf.
 
@@ -888,7 +888,7 @@ Bloco de configuração adicionado:
 
 root@silvaa:~# vim /var/ossec/etc/rules/local_rules.xml
 
-<img src="media/image65.png" style="width:6.26806in;height:3.36944in" />
+![](media/image65.png)
 
 Figura 57. Integração VirusTotal: Definição de regra de alerta para despoletar Resposta Ativa
 
@@ -946,7 +946,7 @@ root@silvaa:/var/ossec/etc# systemctl restart wazuh-manager
 
 root@silvaa:/var/ossec/bin/wazuh-analysisd -t.
 
-<img src="media/image66.png" style="width:6.26806in;height:3.36944in" />
+![](media/image66.png)
 
 Figura 58. Reiniciar Wazun-Manager
 
@@ -954,7 +954,7 @@ Figura 58. Reiniciar Wazun-Manager
 
 No directório root@ams:/var/ossec/active-response/bin crie um script remove-threat.sh.
 
-<img src="media/image67.png" style="width:6.26806in;height:3.36944in" />
+![](media/image67.png)
 
 Figura 59. Rocky Linux 10: Script personalizado de Active Response para mitigação de ameaças
 
@@ -1006,7 +1006,7 @@ root@ams:/var/ossec/active-response/bin# sudo [chmod](#chmod) 750 /var/ossec/act
 
 root@ams:/var/ossec/active-response/bin# sudo [chown](#chown) root:wazuh /var/ossec/active-response/bin/remove-threat.sh
 
-<img src="media/image68.png" style="width:6.26806in;height:3.36944in" />
+![](media/image68.png)
 
 Figura 60. Rocky Linux 10: Definir permissões do script
 
@@ -1018,19 +1018,19 @@ rocha@ams:~\$ echo 'X5O!P%@AP\[4\PZX54(P^)7CC)7}\$EICAR-STANDARD-ANTIVIRUS-TEST-
 
 As figuras seguintes evidenciam o sucesso do teste de resposta ativa, no qual o ficheiro eicar.com foi neutralizado de forma imediata e automatizada. Fica, deste modo, validada a capacidade do Wazuh em mitigar ameaças em tempo real através da integração entre o módulo FIM e o motor de Active Response. Apresentam-se, seguidamente, os registos (logs) e evidências recolhidos tanto no Wazuh-Manager como no agente Rocky10 (agent-ams)**.**
 
-<img src="media/image69.jpeg" style="width:4.27014in;height:2.02222in" />
+![](media/image69.jpeg)
 
 Figura 61. Fluxograma de integração entre o ecossistema Wazuh e a API do VirusTotal.
 
-<img src="media/image70.png" style="width:6.26806in;height:3.36944in" />
+![](media/image70.png)
 
-<img src="media/image71.png" style="width:6.26806in;height:3.36944in" />
+![](media/image71.png)
 
-<img src="media/image72.png" style="width:6.26806in;height:3.36944in" />
+![](media/image72.png)
 
 Figura 62. Dashboard do Wazuh: Registo de Resposta Ativa e remediação do artefacto malicioso (eicar.com)
 
-<img src="media/image73.png" style="width:6.26806in;height:3.36944in" />
+![](media/image73.png)
 
 Figura 63. Dashboard do Wazuh: Registo de Resposta Ativa e remediação do artefacto malicioso (eicar.com)
 
@@ -1038,7 +1038,7 @@ No Rocky10, usei o seguinte comando para monitorizar a criação de logs em temp
 
 root@ams:/var/ossec/logs# tail -f /var/ossec/logs/active-responses.log
 
-<img src="media/image74.png" style="width:6.26806in;height:3.36944in" />
+![](media/image74.png)
 
 Figura 64. Rocky10: Registo de Resposta Ativa e remediação do artefacto malicioso (eicar.com)
 
@@ -1054,7 +1054,7 @@ Iniciamos o processo com a instalação do [jq](https://jqlang.org/).
 
 debora@asilva:~\$ sudo apt update && sudo apt install jq -y
 
-<img src="media/image75.png" style="width:6.26806in;height:3.36944in" />
+![](media/image75.png)
 
 Figura 65. Instalação do jq (lightweight and flexible command-line JSON processor)
 
@@ -1064,7 +1064,7 @@ Criamos o script que permitirá a remoção automática de uma possível ameaça
 
 root@asilva:/var/ossec/active-response/bin# vim remove-threat.sh
 
-<img src="media/image76.png" style="width:6.26806in;height:3.36944in" />
+![](media/image76.png)
 
 Figura 66. Criação do script remove-threat.sh
 
@@ -1092,7 +1092,7 @@ root@asilva:/var/ossec/active-response/bin# sudo chmod 750 /var/ossec/active-res
 
 root@asilva:/var/ossec/active-response/bin# sudo chown root:wazuh /var/ossec/active-response/bin/remove-threat.sh
 
-<img src="media/image77.png" style="width:6.26806in;height:3.36944in" />
+![](media/image77.png)
 
 Figura 67. Definir permissões do script remove-threat.sh
 
@@ -1100,7 +1100,7 @@ Devemos verificar o estado da Active response no ficheiro ossec.conf. Deverá ap
 
 root@asilva:/var/ossec/etc# vim ossec.conf
 
-<img src="media/image78.png" style="width:6.26806in;height:3.36944in" />
+![](media/image78.png)
 
 Figura 68. Wazuh-Manager: Configuração dos parâmetros de Active Response no ossec.conf
 
@@ -1114,15 +1114,15 @@ debora@asilva:~/Downloads\$ echo 'X5O!P%@AP\[4\PZX54(P^)7CC)7}\$EICAR-STANDARD-A
 
 As figuras seguintes evidenciam o sucesso do teste de resposta ativa, no qual o ficheiro eicar.com foi neutralizado de forma imediata e automatizada. Fica, deste modo, validada a capacidade do Wazuh em mitigar ameaças em tempo real através da integração entre o módulo FIM e o motor de Active Response. Apresentam-se, seguidamente, os registos (logs) e evidências recolhidos tanto no Wazuh-Manager como no agente Debian13 (agent-asilva)**.**
 
-<img src="media/image79.png" style="width:6.26806in;height:3.36944in" />
+![](media/image79.png)
 
 Figura 69. Wazuh-Manager: Visualização de eventos provenientes do agente 'agent-asilva' (Debian13)
 
-<img src="media/image80.png" style="width:6.26806in;height:3.36944in" />
+![](media/image80.png)
 
 Figura 70. Wazuh-Manager: Visualização detalhada do registo proveniente do agente 'agent-asilva' (Debian13)
 
-<img src="media/image81.png" style="width:6.26806in;height:3.36944in" />
+![](media/image81.png)
 
 Figura 71. Wazuh-Manager: Visualização detalhada do registo proveniente do agente 'agent-asilva' (Debian13)
 
@@ -1130,7 +1130,7 @@ Tal como no Rocky10, usei o seguinte comando para monitorizar a criação de log
 
 root@asilva:/var/ossec/logs# tail -f active-responses.log
 
-<img src="media/image82.png" style="width:6.26806in;height:3.36944in" />
+![](media/image82.png)
 
 Figura 70. Debian13 (agent-asilva): Registo local de remediação e execução do Active Response
 
@@ -1148,13 +1148,13 @@ Começamos por editar o ficheiro C:\Program Files (x86)\ossec-agent\ossec.conf c
 
 \<directories whodata="yes" realtime="yes" check_all="yes"\>C:\Users\\\Downloads\</directories\>
 
-<img src="media/image83.png" style="width:6.26806in;height:3.36944in" />
+![](media/image83.png)
 
 Figura 71. Windows 11: Configuração do FIM (ossec.conf)
 
 Reiniciamos o serviço Wazuh no Windows (via services.msc ou PowerShell: Restart-Service -Name wazuh).
 
-<img src="media/image84.png" style="width:6.26806in;height:3.36944in" />
+![](media/image84.png)
 
 Figura 72. Windows 11: Reinício do serviço Wazuh-agent
 
@@ -1170,7 +1170,7 @@ Execute o instalador do Python após o download. Certifique-se de marcar as segu
 
 - **Add Python 3.X to PATH** (Adicionar Python 3.X ao PATH — Isto coloca o interpretador no caminho de execução)
 
-<img src="media/image85.png" style="width:6.26806in;height:3.36944in" />
+![](media/image85.png)
 
 Figura 73. Instalação do Python
 
@@ -1186,7 +1186,7 @@ PS C:\Users\sinam\AppData\Local\Python\pythoncore-3.14-64\Scripts\> pyinstaller 
 
 6.17.0
 
-<img src="media/image86.png" style="width:6.26806in;height:3.36944in" />
+![](media/image86.png)
 
 Figura 74. Instalação do Python
 
@@ -1196,9 +1196,9 @@ PS C:\Program Files (x86)\ossec-agent\active-response\bin\> notepad remove-threa
 
 PS C:\Program Files (x86)\ossec-agent\active-response\bin\> pyinstaller -F remove-threat.py
 
-<img src="media/image87.png" style="width:6.26806in;height:3.36944in" />
+![](media/image87.png)
 
-<img src="media/image88.png" style="width:6.26806in;height:3.36597in" />
+![](media/image88.png)
 
 Figura 75. Criação e compilação do script remove-threat.py
 
@@ -1456,7 +1456,7 @@ Reiniciamos o serviço de seguida:
 
 PS C:\Program Files (x86)\ossec-agent\active-response\bin\> Restart-Service -Name wazuh
 
-<img src="media/image89.png" style="width:6.26806in;height:3.36944in" />
+![](media/image89.png)
 
 Figura 76. Implementação do script 'remove-threat.exe' e reinício do agente Wazuh
 
@@ -1476,7 +1476,7 @@ Adicionamos o comando específico para Windows:
 
 248 \</command\>
 
-<img src="media/image90.png" style="width:6.26806in;height:3.36944in" />
+![](media/image90.png)
 
 Figura 76. Wazuh-Manager: Implementação do script 'remove-threat.exe' no ficheiro ossec.conf
 
@@ -1494,7 +1494,7 @@ Mantemos a regra 100100 que já criámos anteriormente.
 
 267 \</active-response\>
 
-<img src="media/image91.png" style="width:6.26806in;height:3.36944in" />
+![](media/image91.png)
 
 Figura 77. Wazuh-Manager: Implementação do script 'remove-threat.exe' no ficheiro ossec.conf
 
@@ -1514,29 +1514,29 @@ As figuras seguintes comprovam o sucesso dos testes realizados com ambos os util
 
 Recortes do teste efetuado com o user silva:
 
-<img src="media/image92.png" style="width:6.26806in;height:3.36944in" />
+![](media/image92.png)
 
-<img src="media/image93.png" style="width:6.26806in;height:3.36944in" />
+![](media/image93.png)
 
-<img src="media/image94.png" style="width:6.26806in;height:3.36944in" />
+![](media/image94.png)
 
-<img src="media/image95.png" style="width:6.26806in;height:0.79375in" />
+![](media/image95.png)
 
 Figura 78. Dashboard do Wazuh-Manager: Confirmação da execução de Active Response no Windows 11 - user ‘silva’
 
 Recortes do teste efetuado com o user bacalhau:
 
-<img src="media/image96.png" style="width:6.26806in;height:3.36944in" />
+![](media/image96.png)
 
 Figura 79. Dashboard do Wazuh: Confirmação da execução de Active Response no Windows 11 – user ‘bacalhau’
 
-<img src="media/image97.png" style="width:6.26806in;height:3.36944in" />
+![](media/image97.png)
 
 Figura 80. Dashboard do Wazuh: Confirmação da execução de Active Response no Windows 11 – user ‘bacalhau’
 
-<img src="media/image98.png" style="width:6.26806in;height:3.36944in" />
+![](media/image98.png)
 
-<img src="media/image99.png" style="width:6.26806in;height:0.74167in" />
+![](media/image99.png)
 
 Figura 81. Dashboard do Wazuh: Confirmação da execução de Active Response no Windows 11 – user ‘bacalhau’
 
@@ -1559,7 +1559,7 @@ O sucesso destes testes comprova que a solução implementada está apta a mitig
 
 ## Introdução: Prevenção de Intrusões e Resposta Ativa em Ambientes de Rede
 
-<img src="media/image100.jpeg" style="width:6.26597in;height:3.52708in" />
+![](media/image100.jpeg)
 
 Figura 82. Integração do Suricata com o Wazuh
 
@@ -1593,7 +1593,7 @@ Principais características:
 
 Em suma, o Suricata atua como um "vigia" inteligente na fronteira da rede, capaz de identificar, registar e bloquear atividades maliciosas em tempo real, sendo uma peça fundamental em qualquer infraestrutura de defesa moderna.
 
-<img src="media/image101.png" style="width:6.26111in;height:3.21667in" />
+![](media/image101.png)
 
 Figura 82. Fluxograma da integração do Suricata com o Wazuh
 
@@ -1605,9 +1605,9 @@ No ecossistema Red Hat, o Suricata não está nos repositórios padrão; ele enc
 
 rocha@ams:~\$ sudo dnf install epel-release -y
 
-<img src="media/image102.png" style="width:6.26806in;height:3.36944in" />
+![](media/image102.png)
 
-<img src="media/image103.png" style="width:6.26806in;height:0.64375in" />
+![](media/image103.png)
 
 Figura 83. Instalação do repositório epel no Rocky10 e posterior configuração do crb
 
@@ -1623,7 +1623,7 @@ rocha@ams:~\$ sudo dnf copr enable @oisf/suricata-7.0 -y
 
 rocha@ams:~\$ sudo dnf install suricata -y
 
-<img src="media/image104.png" style="width:6.26806in;height:3.36944in" />
+![](media/image104.png)
 
 Figura 84. Instalação do Suricata no Rocky10
 
@@ -1633,7 +1633,7 @@ Figura 84. Instalação do Suricata no Rocky10
 
 debora@asilva:~/Downloads\$ sudo apt install suricata -y
 
-<img src="media/image105.png" style="width:6.15031in;height:3.30615in" />
+![](media/image105.png)
 
 Figura 85. Instalação do Suricata no Debian13
 
@@ -1641,7 +1641,7 @@ Para verificar o que foi instalado, usamos o seguinte comando:
 
 debora@asilva:~/Downloads\$ sudo dpkg -L suricata
 
-<img src="media/image106.png" style="width:6.26806in;height:3.36944in" />
+![](media/image106.png)
 
 Figura 85. Instalação do Suricata no Debian13 – Verificação do que foi instalado
 
@@ -1657,15 +1657,15 @@ Descarregamos o ficheiro, que contém as regras atualizadas, através do comando
 
 <span id="tmp_manual" class="anchor"></span>rocha@ams:~/Downloads\$ cd /[tmp](#pasta-tmp)/ && [curl -LO](#curl--lo) https://rules.emergingthreats.net/open/suricata-7.0.3/emerging.rules.tar.gz
 
-<img src="media/image107.png" style="width:6.26806in;height:3.36944in" />
+![](media/image107.png)
 
 Figura 86. Instalação das regras do Suricata no Rocky10
 
 Efetuado o download, necessitamos de criar uma pasta etc/suricata/rules, para, de seguida, executar o descompactamento e posterior deslocação das regras para a pasta criada. É necessário definir as permissões da pasta, através do comando root@ams:/tmp# chmod 777 /etc/suricata/rules/\*.rules.
 
-<img src="media/image108.png" style="width:6.26806in;height:3.36944in" />
+![](media/image108.png)
 
-<img src="media/image109.png" style="width:6.26806in;height:0.69306in" />
+![](media/image109.png)
 
 Figura 87. Instalação das regras do Suricata no Rocky10 e atribuição de permissões
 
@@ -1673,7 +1673,7 @@ Figura 87. Instalação das regras do Suricata no Rocky10 e atribuição de perm
 
 Neste caso, a LAN está configurada no interface ens224.
 
-<img src="media/image110.png" style="width:6.26806in;height:3.36944in" />
+![](media/image110.png)
 
 Figura 88. Rocky10: Identificação do interface da LAN
 
@@ -1681,13 +1681,13 @@ Figura 88. Rocky10: Identificação do interface da LAN
 
 Seguindo as boas práticas, efetuamos uma cópia de segurança do ficheiro suricata.yaml; só depois, introduzimos as alterações necessárias.
 
-<img src="media/image111.png" style="width:6.26806in;height:3.36944in" />
+![](media/image111.png)
 
 Figura 89. Rocky10: Configuração do serviço do Suricata
 
 <span id="variaveis_suricata_manual" class="anchor"></span>Introduzimos o [IP da nossa LAN no campo HOME_NET e definimos a EXTERNAL_NET como “any”](#análise-da-configuração-de-variáveis-de-rede-no-suricata).
 
-<img src="media/image112.png" style="width:6.26806in;height:3.36944in" />
+![](media/image112.png)
 
 Figura 89. Rocky10: Configuração do serviço do Suricata – Edição do ficheiro suricata.yaml
 
@@ -1721,7 +1721,7 @@ Pressione a tecla Enter de seguida e será redirecionado para a linha que procur
 
 Defina o caminho para a pasta onde guardou as regras do Suricata, descarregadas anteriormente.
 
-<img src="media/image113.png" style="width:6.26806in;height:3.36944in" />
+![](media/image113.png)
 
 Figura 90. Rocky10: Configuração do serviço do Suricata – Edição do ficheiro suricata.yaml
 
@@ -1737,7 +1737,7 @@ Alteração introduzida:
 
 Verifique o campo Global stats configuration. Deverá estar enabled: yes.
 
-<img src="media/image114.png" style="width:6.26806in;height:3.36944in" />
+![](media/image114.png)
 
 Figura 91. Rocky10: Configuração do serviço do Suricata – Edição do ficheiro suricata.yaml
 
@@ -1751,7 +1751,7 @@ Configuração, que neste caso não foi necessário alterar:
 
 Adicione o interface no qual está configurada a LAN do Rocky10.
 
-<img src="media/image115.png" style="width:6.26806in;height:3.36944in" />
+![](media/image115.png)
 
 Figura 92. Rocky10: Configuração do serviço do Suricata – Edição do ficheiro suricata.yaml
 
@@ -1775,7 +1775,7 @@ Apesar de ter adicionado o interface correto na secção \# Linux high speed cap
 
 campo af-packet:, o Suricata deu erro ao iniciar. Verifiquei que havia outros campos que seria necessário alterar (figura seguinte). Usei o seguinte comando, no VIM, para alterar todas as entradas, de uma só vez: :%s/eth0/ens224/g .
 
-<img src="media/image116.png" style="width:6.26806in;height:3.36944in" />
+![](media/image116.png)
 
 Figura 93. Rocky10: Configuração do serviço do Suricata – Edição do ficheiro suricata.yaml
 
@@ -1793,7 +1793,7 @@ Aqui está a diferença:
 
 root@ams:/etc/sysconfig# vim suricata
 
-<img src="media/image117.png" style="width:6.26806in;height:3.36944in" />
+![](media/image117.png)
 
 Figura 94. Rocky10: Configuração do arranque do Suricata – Edição do ficheiro suricata
 
@@ -1803,13 +1803,13 @@ Alteração introduzida:
 
 8 OPTIONS="-i ens224 --user suricata "
 
-<img src="media/image118.png" style="width:6.26806in;height:3.36944in" />
+![](media/image118.png)
 
 Figura 95. Rocky10: Configuração do arranque do Suricata – Edição do ficheiro suricata
 
 Após termos alterado o interface, em ambos os ficheiros de configuração, o serviço reiniciou normalmente.
 
-<img src="media/image119.png" style="width:6.26806in;height:3.36944in" />
+![](media/image119.png)
 
 Figura 96. Rocky Linux 10: Verificação do estado do serviço Suricata (systemctl)
 
@@ -1821,7 +1821,7 @@ Para que tal seja possível, adicionamos o bloco, que disponibilizo mais abaixo,
 
 root@ams:/var/ossec/etc# vim ossec.conf
 
-<img src="media/image120.png" style="width:6.26806in;height:3.36944in" />
+![](media/image120.png)
 
 Figura 97. Rocky10: Integração do Suricata com o Wazuh-agent
 
@@ -1847,7 +1847,7 @@ root@ams:/var/ossec/etc# sudo chmod 755 /var/log/suricata/
 
 root@ams:/var/ossec/etc# sudo chmod 644 /var/log/suricata/eve.json
 
-<img src="media/image121.png" style="width:6.26806in;height:3.36944in" />
+![](media/image121.png)
 
 Figura 98. Rocky10: Configuração de permissões e privilégios de leitura no Suricata para o Wazuh-agent
 
@@ -1859,7 +1859,7 @@ Figura 98. Rocky10: Configuração de permissões e privilégios de leitura no S
 
 debora@asilva:/tmp\$ cd /[tmp](#pasta-tmp)/ && [curl -LO](#curl--lo) https://rules.emergingthreats.net/open/suricata-7.0.3/emerging.rules.tar.gz
 
-<img src="media/image122.png" style="width:6.26806in;height:3.36944in" />
+![](media/image122.png)
 
 Figura 99. Debian13: Instalação das regras do Suricata
 
@@ -1869,9 +1869,9 @@ debora@asilva:/tmp\$ sudo tar -xvzf emerging.rules.tar.gz && sudo mv rules/\*.ru
 
 É igualmente necessário, definir as permissões da pasta, através do comando: debora@asilva:/tmp\$ sudo chmod 777 /etc/suricata/rules/\*.rules.
 
-<img src="media/image123.png" style="width:6.26806in;height:3.36944in" />
+![](media/image123.png)
 
-<img src="media/image124.png" style="width:6.26806in;height:0.67292in" />
+![](media/image124.png)
 
 Figura 100. Debian13: Instalação das regras do Suricata e atribuição de premissões
 
@@ -1879,7 +1879,7 @@ Figura 100. Debian13: Instalação das regras do Suricata e atribuição de prem
 
 Neste caso, a LAN está configurada no interface ens37.
 
-<img src="media/image125.png" style="width:6.26806in;height:3.36736in" />
+![](media/image125.png)
 
 Figura 100. Debian13: Identificação do interface da LAN
 
@@ -1887,13 +1887,13 @@ Figura 100. Debian13: Identificação do interface da LAN
 
 Seguindo as boas práticas, efetuamos uma cópia de segurança do ficheiro suricata.yaml; só depois, introduzimos as alterações necessárias.
 
-<img src="media/image126.png" style="width:6.26806in;height:3.36944in" />
+![](media/image126.png)
 
 Figura 101. Debian13: Cópia de segurança e posterior edição do ficheiro suricata.yaml
 
 <span id="variaveis_suricata_manualdebian" class="anchor"></span>Introduzimos o [IP da nossa LAN no campo HOME_NET e definimos a EXTERNAL_NET como “any”](#análise-da-configuração-de-variáveis-de-rede-no-suricata)
 
-<img src="media/image127.png" style="width:6.26806in;height:3.36944in" />
+![](media/image127.png)
 
 Figura 102. Debian13: Configuração do ficheiro suricata.yaml
 
@@ -1927,7 +1927,7 @@ Pressione a tecla Enter de seguida e será redirecionado para a linha que procur
 
 Defina o caminho para a pasta onde guardou as regras do Suricata, descarregadas anteriormente.
 
-<img src="media/image128.png" style="width:6.26806in;height:3.36944in" />
+![](media/image128.png)
 
 Figura 103. Debian13: Configuração do ficheiro suricata.yaml
 
@@ -1943,7 +1943,7 @@ Alteração introduzida:
 
 Verifique o campo Global stats configuration. Deverá estar enabled: yes.
 
-<img src="media/image129.png" style="width:6.26806in;height:3.36944in" />
+![](media/image129.png)
 
 Figura 104. Debian13: Configuração do ficheiro suricata.yaml
 
@@ -1957,7 +1957,7 @@ Configuração, que neste caso não foi necessário alterar:
 
 Adicione o interface no qual está configurada a LAN do Debian13. Usei o seguinte comando, no VIM, para alterar todas as entradas, de uma só vez: :%s/eth0/ens37/g .
 
-<img src="media/image130.png" style="width:6.26806in;height:3.36944in" />
+![](media/image130.png)
 
 Figura 105. Debian13: Configuração do ficheiro suricata.yaml
 
@@ -1985,7 +1985,7 @@ Para que tal seja possível, adicionamos o bloco, que disponibilizo mais abaixo,
 
 root@asilva:/var/ossec/etc# vim ossec.conf
 
-<img src="media/image131.png" style="width:6.26806in;height:3.36944in" />
+![](media/image131.png)
 
 Figura 106. Debian13: Configuração do ficheiro suricata.yaml
 
@@ -2011,7 +2011,7 @@ root@asilva:/var/ossec/etc# chmod 755 /var/log/suricata/
 
 root@asilva:/var/ossec/etc# chmod 644 /var/log/suricata/eve.json
 
-<img src="media/image132.png" style="width:6.26806in;height:3.36736in" />
+![](media/image132.png)
 
 Figura 107. Debian13: Atribuição de permissões de leitura no ficheiro eve.json do Suricata
 
@@ -2075,7 +2075,7 @@ Bloco adicionado:
 
 232 \</active-response\>
 
-<img src="media/image133.png" style="width:6.26806in;height:3.36944in" />
+![](media/image133.png)
 
 Figura 108. Wazuh-Manager: Configuração do módulo de recolha de logs do Suricata (ossec.conf)
 
@@ -2091,7 +2091,7 @@ Esta uniformização permitiu:
 
 3.  **Gestão Escalável:** Em ambientes de produção reais, a padronização de ferramentas entre diferentes distribuições Linux facilita a manutenção e a automação de políticas de segurança, garantindo que as medidas de mitigação sejam aplicadas de forma coerente em todo o parque informático."
 
-<img src="media/image134.png" style="width:3.76355in;height:2.23402in" />
+![](media/image134.png)
 
 Figura 109. Firewalld – Figura ilustrativa do serviço
 
@@ -2109,7 +2109,7 @@ A implementação deste script customizado, em conjunto com o utilitário **fir
 
 Na figura seguinte, apresento o recorte, retirado do Debian13, que ilustra o erro **'Cannot read srcip from data'.**
 
-<img src="media/image135.png" style="width:6.26806in;height:3.36944in" />
+![](media/image135.png)
 
 Figura 110. Debian13: Visualização do erro 'Cannot read srcip from data'
 
@@ -2119,7 +2119,7 @@ root@asilva:/var/ossec/active-response/bin# sudo vim /var/ossec/active-response/
 
 **Script para Debian13.**
 
-<img src="media/image136.png" style="width:6.26806in;height:3.36944in" />
+![](media/image136.png)
 
 Figura 111. Debian13: Edição do script suricata-block.sh
 
@@ -2127,7 +2127,7 @@ Figura 111. Debian13: Edição do script suricata-block.sh
 
 Atenção que o script do Rocky é ligeiramente diferente. Necessitamos de alterar o campo timeout.
 
-<img src="media/image137.png" style="width:6.26806in;height:3.36944in" />
+![](media/image137.png)
 
 Figura 112. Rocky10: Edição do script suricata-block.sh
 
@@ -2173,23 +2173,23 @@ root@silvaa:/var/ossec/etc# systemctl restart wazuh-manager
 
 As figuras seguintes ilustram os testes de reconhecimento realizados através do **Nmap**, a partir do **Parrot OS**, direcionados aos agentes **Debian13** e **Rocky10**. Estes registos representam o estado do sistema antes da ativação e configuração do mecanismo de resposta ativa (*Active Response*).
 
-<img src="media/image138.png" style="width:6.26806in;height:3.36944in" />
+![](media/image138.png)
 
 Figura 113. Parrot OS: Scanning de rede e enumeração de serviços no Rocky10 via Nmap
 
-<img src="media/image139.png" style="width:6.26806in;height:3.36944in" />
+![](media/image139.png)
 
-<img src="media/image140.png" style="width:6.26806in;height:2.34306in" />
+![](media/image140.png)
 
-<img src="media/image141.png" style="width:6.26806in;height:0.81667in" />
+![](media/image141.png)
 
 Figura 114. Wazuh-Manager: Deteção de scanning de rede (Nmap) proveniente do Parrot OS contra o Rocky10
 
-<img src="media/image142.png" style="width:6.26806in;height:3.18958in" />
+![](media/image142.png)
 
-<img src="media/image143.png" style="width:6.26806in;height:2.34306in" />
+![](media/image143.png)
 
-<img src="media/image144.png" style="width:6.26806in;height:0.69583in" />
+![](media/image144.png)
 
 Figura 115. Wazuh-Manager: Deteção de scanning de rede (Nmap) proveniente do Parrot OS contra o Debian13
 
@@ -2197,45 +2197,45 @@ Figura 115. Wazuh-Manager: Deteção de scanning de rede (Nmap) proveniente do P
 
 Após a deteção do varrimento de portas realizado pelo Parrot OS, o Wazuh-Manager desencadeou automaticamente o script personalizado suricata-block.sh no agente Debian. Conforme demonstrado nas evidências abaixo, o endereço IP do atacante (**172.23.10.6**) foi inserido na firewall do sistema através do comando firewall-cmd. De acordo com os requisitos do projeto, foi aplicado um **timeout de 900 segundos (15 minutos)**, garantindo a interrupção imediata da conectividade e a mitigação da ameaça durante o período estabelecido.
 
-<img src="media/image145.png" style="width:6.26806in;height:3.36944in" />
+![](media/image145.png)
 
 Figura 116. Visualização das rich-rules do Firewalld do Debian13 anteriores ao varrimento efetuado pelo nmap
 
-<img src="media/image146.png" style="width:6.26806in;height:3.36944in" />
+![](media/image146.png)
 
 Figura 117. Visualização do scan efetuado ao Debian13, pelo nmap, através do Parrot OS
 
-<img src="media/image147.png" style="width:6.26806in;height:3.36944in" />
+![](media/image147.png)
 
-<img src="media/image148.png" style="width:6.26806in;height:3.36944in" />
+![](media/image148.png)
 
-<img src="media/image149.png" style="width:6.26806in;height:3.36944in" />
+![](media/image149.png)
 
 Figuras 118, 119 e 120. Visualização da regra de bloqueio adicionada às rich-rules do Firewalld do Debian13; Visualização do ping falhado efetuado ao Debian13, a partir do Parrot OS; Wazuh-Manager Dashboard: Visualização de eventos gerados pelo agent-asilva (Debian13)
 
-<img src="media/image150.png" style="width:6.26806in;height:3.17639in" />
+![](media/image150.png)
 
-<img src="media/image151.png" style="width:6.26806in;height:2.25833in" />
+![](media/image151.png)
 
-<img src="media/image152.png" style="width:6.26806in;height:0.80694in" />
+![](media/image152.png)
 
 Figura 121. Registo do ataque efetuado a partir do Parrot OS ao Debian13
 
-<img src="media/image153.png" style="width:6.26806in;height:3.17986in" />
+![](media/image153.png)
 
 Figura 122. Registo do ataque efetuado a partir do Parrot OS ao Debian13
 
-<img src="media/image154.png" style="width:6.26806in;height:1.92153in" />
+![](media/image154.png)
 
 Figura 124. Registo do ataque efetuado a partir do Parrot OS ao Debian13
 
 Decorridos os **15 minutos de timeout** configurados na resposta ativa, a regra de bloqueio foi automaticamente removida, restabelecendo-se a conectividade (ICMP) entre o Parrot OS e o Debian13.
 
-<img src="media/image155.png" style="width:6.26806in;height:3.36944in" />
+![](media/image155.png)
 
 Figura 125. Ping efetuado a partir do Parrot OS ao Debian13 após levantamento do bloqueio
 
-<img src="media/image156.png" style="width:6.26806in;height:3.36944in" />
+![](media/image156.png)
 
 Figura 126. Remoção da rich-rule de bloqueio, adicionada anteriormente
 
@@ -2243,29 +2243,29 @@ Figura 126. Remoção da rich-rule de bloqueio, adicionada anteriormente
 
 Após a deteção do varrimento de portas realizado pelo Parrot OS, o Wazuh-Manager desencadeou automaticamente o script personalizado suricata-block.sh no agente Rocky10. Conforme demonstrado nas evidências abaixo, o endereço IP do atacante (**172.23.10.6**) foi inserido na firewall do sistema através do comando firewall-cmd. De acordo com os requisitos do projeto, foi aplicado um **timeout de 600 segundos (10 minutos)**, garantindo a interrupção imediata da conectividade e a mitigação da ameaça durante o período estabelecido.
 
-<img src="media/image157.png" style="width:6.26806in;height:3.36944in" />
+![](media/image157.png)
 
 Figura 127. Auditoria de rede: Scanning e enumeração de serviços no Rocky10 via Parrot OS
 
-<img src="media/image158.png" style="width:6.26806in;height:3.36736in" />
+![](media/image158.png)
 
 Figura 128. Parrot OS: Verificação de conectividade ICMP e validação do bloqueio de rede
 
-<img src="media/image159.png" style="width:6.26806in;height:3.36944in" />
+![](media/image159.png)
 
 Figura 129. Rocky10: Listagem de rich rules confirmando o bloqueio dinâmico do IP do Parrot OS
 
-<img src="media/image160.png" style="width:6.26806in;height:3.36944in" />
+![](media/image160.png)
 
-<img src="media/image161.png" style="width:6.26806in;height:3.17986in" />
+![](media/image161.png)
 
-<img src="media/image162.png" style="width:6.26806in;height:1.82361in" />
+![](media/image162.png)
 
 Figura 130. Wazuh-Manager: Evidência de remediação e execução da política de bloqueio ao IP do Parrot OS
 
 Decorridos os **10 minutos de timeout** configurados na resposta ativa, a regra de bloqueio foi automaticamente removida, restabelecendo-se a conectividade (ICMP) entre o Parrot OS e o Rocky10.
 
-<img src="media/image163.png" style="width:6.26806in;height:3.36944in" />
+![](media/image163.png)
 
 Figura 131. Rocky10: Listagem de rich rules confirmando o desbloqueio dinâmico do IP do Parrot OS
 
@@ -2285,7 +2285,7 @@ A conclusão da **Questão 4** representa um marco crítico neste projeto, poi
 
 Em suma, esta fase do projeto validou que a rede está agora protegida contra tentativas iniciais de intrusão e reconhecimento, reduzindo drasticamente a janela de oportunidade para um atacante e garantindo a resiliência dos agentes monitorizados através da automação de defesas.
 
-<img src="media/image164.png" style="width:6.26597in;height:7.01944in" />
+![](media/image164.png)
 
 Figura 132. Integração do Suricata com o Wazuh - logo
 
@@ -2337,7 +2337,7 @@ Bloco adicionado ao ficheiro antonio.conf:
 
 5
 
-<img src="media/image165.png" style="width:6.26806in;height:3.36944in" />
+![](media/image165.png)
 
 Figura 133. Criação do virtual host no Rocky10
 
@@ -2355,7 +2355,7 @@ success
 
 success
 
-<img src="media/image166.png" style="width:6.26806in;height:3.36944in" />
+![](media/image166.png)
 
 Figura 134. Rocky10: Configuração de exceção no Firewalld para permissão de tráfego
 
@@ -2395,7 +2395,7 @@ Bloco adicionado:
 
 7 \</VirtualHost\>
 
-<img src="media/image167.png" style="width:6.26806in;height:3.36944in" />
+![](media/image167.png)
 
 Figura 135. Debian13: Configuração do virtual host
 
@@ -2421,7 +2421,7 @@ root@asilva:/etc/apache2/sites-available# firewall-cmd --list-services
 
 dhcpv6-client http ssh
 
-<img src="media/image168.png" style="width:6.26806in;height:3.36944in" />
+![](media/image168.png)
 
 Figura 136. Debian13: Configuração de exceção no Firewalld para permissão de tráfego
 
@@ -2458,7 +2458,7 @@ Adicionamos esta linha no fim do ficheiro: 
 
 ServerName www.silva.local
 
-<img src="media/image169.png" style="width:6.26806in;height:3.36944in" />
+![](media/image169.png)
 
 Figura 137. Debian13: Configuração do ficheiro apache2.conf
 
@@ -2482,17 +2482,17 @@ Linhas adicionadas ao ficheiro:
 
 172.23.10.4 www.antonio.local
 
-<img src="media/image170.png" style="width:6.26806in;height:3.36944in" />
+![](media/image170.png)
 
 Figura 138. Configuração do DNS do Parrot OS
 
 Testamos se os sites abrem devidamente através do browser do Parrot OS.
 
-<img src="media/image171.png" style="width:6.26806in;height:3.36944in" />
+![](media/image171.png)
 
 Figura 139. Parrot OS: Veficação de acesso ao site www.silva.local
 
-<img src="media/image172.png" style="width:6.26806in;height:3.36944in" />
+![](media/image172.png)
 
 Figura 140. Parrot OS: Veficação de acesso ao site www.antonio.local
 
@@ -2506,7 +2506,7 @@ O Wazuh deteta ataques [DoS](#dos-denial-of-service) analisando as entradas no f
 
 root@asilva:/var/ossec/etc# vim ossec.conf
 
-<img src="media/image173.png" style="width:6.26806in;height:3.36944in" />
+![](media/image173.png)
 
 Figura 141. Debian 13: Configuração da monitorização de logs do Apache no ossec.conf
 
@@ -2530,7 +2530,7 @@ root@asilva:/var/ossec/etc# systemctl restart wazuh-agent
 
 root@ams:/var/ossec/etc# vim ossec.conf
 
-<img src="media/image174.png" style="width:6.26806in;height:3.36944in" />
+![](media/image174.png)
 
 Figura 142. Rocky10: Configuração da monitorização de logs do Apache no ossec.conf
 
@@ -2554,7 +2554,7 @@ root@ams:/var/ossec/active-response/bin# vim web-drop.sh
 
 Voltamos a usar um script customizado, pela mesma razão já referia anteriormente.
 
-<img src="media/image175.png" style="width:6.26806in;height:3.36944in" />
+![](media/image175.png)
 
 Figura 143. Rocky10: Edição do ficheiro web-drop.sh
 
@@ -2684,7 +2684,7 @@ No Wazuh-Manager, editamos o /var/ossec/etc/ossec.conf e adicionamos estas duas 
 
 246 \</active-response\>
 
-<img src="media/image176.png" style="width:6.26806in;height:3.36944in" />
+![](media/image176.png)
 
 Figura 144. Wazuh-Manager: Configuração de Active Response no ossec.conf para execução do script 'web-drop.sh'
 
@@ -2724,19 +2724,19 @@ Utilizou-se a ferramenta [**hping3** ](#hping3)a partir da máquina Parrot OS 
 
 └──╼ \#sudo hping3 -S --flood -V -p 80 172.23.10.4
 
-<img src="media/image177.png" style="width:6.26806in;height:3.36944in" />
+![](media/image177.png)
 
 Figura 145. Parrot OS: Simulação de ataque DoS (TCP SYN Flood) via hping3 contra o Rocky10
 
-<img src="media/image178.png" style="width:6.26806in;height:3.17361in" />
+![](media/image178.png)
 
-<img src="media/image179.png" style="width:6.26806in;height:2.22222in" />
+![](media/image179.png)
 
 Figura 146. Wazuh-Manager: Deteção de ataque de negação de serviço (TCP SYN Flood) no Rocky10
 
-<img src="media/image180.png" style="width:6.26806in;height:1.62083in" />
+![](media/image180.png)
 
-<img src="media/image181.png" style="width:6.26806in;height:3.36944in" />
+![](media/image181.png)
 
 Figura 147. Wazuh-Manager: Deteção de ataque de negação de serviço (TCP SYN Flood) no Rocky10
 
@@ -2746,19 +2746,19 @@ Figura 147. Wazuh-Manager: Deteção de ataque de negação de serviço (TCP SYN
 
 └──╼ \#sudo hping3 -S --flood -V -p 80 172.23.10.3
 
-<img src="media/image182.png" style="width:6.26806in;height:3.36944in" />
+![](media/image182.png)
 
 Figura 148. Parrot OS: Simulação de ataque DoS (TCP SYN Flood) via hping3 contra o Debian13
 
-<img src="media/image183.png" style="width:6.26806in;height:3.17014in" />
+![](media/image183.png)
 
-<img src="media/image184.png" style="width:6.26806in;height:2.23194in" />
+![](media/image184.png)
 
-<img src="media/image185.png" style="width:6.26806in;height:0.40208in" />
+![](media/image185.png)
 
 Figura 149. Wazuh-Manager: Deteção de ataque de negação de serviço (TCP SYN Flood) no Debian13
 
-<img src="media/image186.png" style="width:6.26806in;height:3.36944in" />
+![](media/image186.png)
 
 Figura 150. Wazuh-Manager: Deteção de ataque de negação de serviço (TCP SYN Flood) no Debian13
 
@@ -2778,29 +2778,29 @@ O Wazuh-Manager, ao processar os alertas de nível 9 e 12 (Regras 203 e 100005),
 
 - **Prevenção de Lockout:** Os logs demonstram que o script ignorou corretamente o IP do servidor (172.23.10.4) e do Manager (172.23.10.2), garantindo a continuidade da gestão do sistema.
 
-<img src="media/image187.png" style="width:6.26806in;height:3.36944in" />
+![](media/image187.png)
 
 Figura 151. Parrot OS: Simulação de ataque DoS (TCP SYN Flood) via hping3 contra o Rocky10
 
-<img src="media/image188.png" style="width:6.26806in;height:3.36944in" />
+![](media/image188.png)
 
 Figura 152. Rocky10: Registo de remediação e interdição do IP do Parrot OS após ataque DoS
 
-<img src="media/image189.png" style="width:6.26806in;height:3.36944in" />
+![](media/image189.png)
 
 Figura 153. Rocky Linux 10: Listagem de rich rules evidenciando a mitigação ativa do host atacante
 
-<img src="media/image190.png" style="width:6.26806in;height:3.17986in" />
+![](media/image190.png)
 
-<img src="media/image191.png" style="width:6.26806in;height:0.39861in" />
+![](media/image191.png)
 
 Figura 154. Wazuh-Manager: Deteção de ataque de inundação (flooding) contra o Rocky10
 
 **Timeout e Persistência:** Conforme solicitado no enunciado, o bloqueio foi configurado para **30 minutos**. Os logs comprovam que o sistema permanece protegido enquanto o ataque persiste, estando a limpeza automática programada para o fim do período de timeout.
 
-<img src="media/image192.png" style="width:6.26806in;height:3.36944in" />
+![](media/image192.png)
 
-<img src="media/image193.png" style="width:6.26806in;height:3.36944in" />
+![](media/image193.png)
 
 Figura 155. Rocky10: Expiração da Resposta Ativa e remoção automática das rich rules no Firewalld
 
@@ -2818,21 +2818,21 @@ Devido à discrepância entre os campos de log do Suricata e os campos padrão d
 
 - **Validação da Firewall:** O comando firewall-cmd --list-rich-rules no Debian apresenta a regra ativa de rejeição de tráfego para o host atacante.
 
-<img src="media/image194.png" style="width:6.26806in;height:3.36944in" />
+![](media/image194.png)
 
 Figura 156. Parrot OS: Simulação de ataque DoS (TCP SYN Flood) via hping3 contra o Debian13
 
-<img src="media/image195.png" style="width:6.26806in;height:3.36944in" />
+![](media/image195.png)
 
-<img src="media/image196.png" style="width:6.26806in;height:3.36597in" />
+![](media/image196.png)
 
 Figura 157. Debian13: Listagem de rich rules evidenciando a mitigação ativa do host atacante
 
 **Timeout e Persistência:** Conforme solicitado no enunciado, o bloqueio foi configurado para **40 minutos**. Os logs comprovam que o sistema permanece protegido enquanto o ataque persiste, estando a limpeza automática programada para o fim do período de timeout.
 
-<img src="media/image197.png" style="width:6.26806in;height:3.36389in" />
+![](media/image197.png)
 
-<img src="media/image198.png" style="width:6.26806in;height:3.36736in" />
+![](media/image198.png)
 
 Figura 158. Expiração da Resposta Ativa e remoção automática das rich rules no Firewalld
 
@@ -2886,7 +2886,7 @@ Adicionamos as seguintes configurações ao /var/ossec/etc/ossec.conf do Wazuh
 
 246 \</active-response\>
 
-<img src="media/image199.png" style="width:6.26806in;height:3.36944in" />
+![](media/image199.png)
 
 Figura 159. Wazuh-Manager: Configuração do ficheiro ossec.conf 
 
@@ -2894,13 +2894,13 @@ Figura 159. Wazuh-Manager: Configuração do ficheiro ossec.conf 
 
 Abrimos o OWASP ZAP, localizado no menu de aplicações do Parrot em Web Application Analysis.
 
-<img src="media/image200.png" style="width:6.26806in;height:3.36944in" />
+![](media/image200.png)
 
 Figura 160. Parrot OS: Menú das aplicações acesso ao Owasp-Zap
 
 Selecionamos **Automated Scan.**
 
-<img src="media/image201.png" style="width:6.26806in;height:3.36944in" />
+![](media/image201.png)
 
 Figura 161. Parrot OS: Dashboard do OWASP ZAP
 
@@ -2932,37 +2932,37 @@ O ataque foi prontamente identificado pelo motor de deteção de intrusão (IDS)
 
 Os recortes que se seguem comprovam, inequivocamente, o ataque efetuado e o sucesso das medidas de defesa aplicadas.
 
-<img src="media/image202.png" style="width:6.26806in;height:3.36944in" />
+![](media/image202.png)
 
 Figura 162. Parrot OS: Interface do OWASP ZAP após análise dinâmica (DAST) ao domínio www.antonio.local
 
-<img src="media/image203.png" style="width:2.35961in;height:1.32821in" />
+![](media/image203.png)
 
 Figura 163. OWASP ZAP logo
 
-<img src="media/image204.png" style="width:6.26806in;height:3.36736in" />
+![](media/image204.png)
 
-<img src="media/image205.png" style="width:6.26806in;height:3.36389in" />
+![](media/image205.png)
 
 Figura 164. Debian 13: Registo de remediação e listagem de rich rules após deteção de varrimento DAST (OWASP ZAP)
 
-<img src="media/image206.png" style="width:6.26806in;height:3.36944in" />
+![](media/image206.png)
 
 Figura 165. Wazuh-Manager: Alertas de segurança e deteção de varrimento DAST (OWASP ZAP)
 
-<img src="media/image207.png" style="width:6.26806in;height:3.17014in" />
+![](media/image207.png)
 
-<img src="media/image208.png" style="width:6.26806in;height:1.62708in" />
+![](media/image208.png)
 
 Figura 166. Wazuh-Manager: Alertas de segurança e deteção de varrimento DAST (OWASP ZAP)
 
 Os recortes que se seguem comprovam a remoção automática do bloqueio passsadas 2h.
 
-<img src="media/image209.png" style="width:6.26806in;height:3.36736in" />
+![](media/image209.png)
 
 Figura 167. Debian13: Expiração da Resposta Ativa e reversão automática do bloqueio (Timeout: 2h)
 
-<img src="media/image210.png" style="width:6.26806in;height:3.36736in" />
+![](media/image210.png)
 
 Figura 168. Debian13: Listagem das rich-rules após reversão automática do bloqueio (Timeout: 2h)
 
@@ -2982,41 +2982,41 @@ As sondagens agressivas realizadas pelo Parrot OS foram intercetadas em tempo re
 
 Os recortes que se seguem comprovam, inequivocamente, o ataque efetuado e o sucesso das medidas de defesa aplicadas.
 
-<img src="media/image211.png" style="width:2.34975in;height:1.32267in" />
+![](media/image211.png)
 
 Figura 169. OWASP-ZAP logo
 
-<img src="media/image212.png" style="width:6.26806in;height:3.36944in" />
+![](media/image212.png)
 
 Figura 170. Parrot OS: Consola do OWASP ZAP com o sumário de vulnerabilidades (DAST) do domínio www.antonio.local
 
-<img src="media/image213.png" style="width:6.26806in;height:3.36944in" />
+![](media/image213.png)
 
-<img src="media/image214.png" style="width:6.26806in;height:3.36944in" />
+![](media/image214.png)
 
 Figura 171. Rocky10: Registo de remediação e listagem de rich rules após a mitigação do ataque
 
-<img src="media/image215.png" style="width:6.26806in;height:3.36944in" />
+![](media/image215.png)
 
 Figura 172. Dashboard do Wazuh: Deteção de varrimento DAST e alertas de segurança no Rocky10
 
-<img src="media/image216.png" style="width:6.26806in;height:3.17986in" />
+![](media/image216.png)
 
-<img src="media/image217.png" style="width:6.26806in;height:2.23819in" />
+![](media/image217.png)
 
 Figura 173. Dashboard do Wazuh: Deteção de varrimento DAST e alertas de segurança no Rocky10
 
-<img src="media/image218.png" style="width:6.26806in;height:2.44097in" />
+![](media/image218.png)
 
 Figura 174. Dashboard do Wazuh: Deteção de varrimento DAST e alertas de segurança no Rocky10 (cont.)
 
 Os recortes que se seguem, comprovam a remoção automática do bloqueio de 1h.
 
-<img src="media/image219.png" style="width:6.26806in;height:3.36944in" />
+![](media/image219.png)
 
 Figura 175. Rocky10: Expiração da Resposta Ativa e remoção automática da regra de interdição
 
-<img src="media/image220.png" style="width:6.26806in;height:3.36944in" />
+![](media/image220.png)
 
 Figura 176. Rocky10: Listagem das rich-rules após remoção automática da regra de interdição
 
@@ -3052,15 +3052,15 @@ Passos a seguir:
 
 - Repetimos o processo e criamos o grupo Windows
 
-<img src="media/image221.png" style="width:6.26806in;height:3.36944in" />
+![](media/image221.png)
 
 Figura 177. Wazuh-Manager: Criação de grupos
 
-<img src="media/image222.png" style="width:6.26806in;height:3.36944in" />
+![](media/image222.png)
 
 Figura 178. Wazuh-Manager: Criação de grupos
 
-<img src="media/image223.png" style="width:6.26806in;height:3.36944in" />
+![](media/image223.png)
 
 Figura 179. Wazuh-Manager: Visualização dos grupos existentes
 
@@ -3076,19 +3076,19 @@ Selecionamos os agentes:
 
 Clicamos em **Add agents** (ou Apply) para finalizar.
 
-<img src="media/image224.png" style="width:6.26806in;height:3.36944in" />
+![](media/image224.png)
 
-<img src="media/image225.png" style="width:6.26806in;height:3.36944in" />
+![](media/image225.png)
 
-<img src="media/image226.png" style="width:6.26806in;height:3.36944in" />
+![](media/image226.png)
 
 Figura 180. Wazuh-Manager: Alocação e segmentação de agentes em grupos de segurança
 
-<img src="media/image227.png" style="width:6.26806in;height:3.36944in" />
+![](media/image227.png)
 
 Figura 181. Wazuh-Manager: Alocação e segmentação de agentes em grupos de segurança
 
-<img src="media/image228.png" style="width:6.26806in;height:3.36944in" />
+![](media/image228.png)
 
 Figura 182. Wazuh-Manager: Visualização de grupos existentes
 
@@ -3108,13 +3108,13 @@ Figura 182. Wazuh-Manager: Visualização de grupos existentes
 
 Em vez de ter as regras de monitorização de pastas (FIM) ou comandos no ossec.conf global, podemos colocá-las aqui. Neste exemplo, colei o código ilustrado nas imagens que se seguem.
 
-<img src="media/image229.png" style="width:6.26806in;height:3.36944in" />
+![](media/image229.png)
 
 Figura 183. Wazuh-Manager: Personalização
 
 Fazer o mesmo para o Grupo Windows.
 
-<img src="media/image230.png" style="width:6.26806in;height:3.36944in" />
+![](media/image230.png)
 
 Figura 184. Wazuh-Manager: Personalização
 
@@ -3594,11 +3594,11 @@ O ataque funciona geralmente através de duas estratégias:
 
 Para monitorizar e prevenir estes ataques, neste laboratório, o **Suricata** desempenha um papel fundamental, pois consegue detetar padrões de tráfego anómalos (como um excesso de pedidos SYN ou pacotes ICMP) e alertar o **Wazuh** para que este possa bloquear o IP atacante através de uma *Active Response*.
 
-<img src="media/image231.png" style="width:2.98548in;height:1.48183in" />
+![](media/image231.png)
 
 Figura 184. Ataque DdoS
 
-<img src="media/image232.png" style="width:2.79672in;height:1.75779in" />
+![](media/image232.png)
 
 Figura 185. TCP Three-Way Handshake
 
