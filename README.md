@@ -4,9 +4,7 @@
 
 | | |
 |---|---|
-| **Curso** | Técnico Especialista em Cibersegurança (CET103) |
-| **Formador** | Fernando Ruela |
-| **Formando** | António Magalhães Silva |
+| **Curso** | Técnico Especialista em Cibersegurança |
 | **Data** | Dezembro de 2025 |
 
 ![](media/image1.png)
